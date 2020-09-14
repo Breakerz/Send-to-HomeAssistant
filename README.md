@@ -7,14 +7,14 @@ further processing through automation".
 After installing the extension you will need to:
 
 1. Create an automation, with a [webhook trigger](https://www.home-assistant.io/docs/automation/trigger/).
-2. Configure the URL, and Webhook in the extension using the "Options" menu.
+2. Configure the URL for the Webhook in the extension using the "Options" menu.
 
 
 Configuring the extension
 -------------------------
 
 Go to the Extensions menu in chrome. Select the "Options" link for the
-extension. Input your URL and webhook and press "Save".
+extension. Input your URL for the  webhook and press "Save".
 
 
 Creating your first automation

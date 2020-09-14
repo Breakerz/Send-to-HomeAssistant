@@ -1,10 +1,8 @@
 // Saves options to chrome.storage
 function save_options() {
-    var haurl = document.getElementById('haurl').value;
     var webhookid = document.getElementById('webhookid').value;
     console.log(haurl + webhookid);
-    chrome.storage.sync.set({
-        haurl: haurl,
+    chrome.storage.sync.set({        
         webhookid: webhookid
     }, function () {
         // Update status to let user know options were saved.
@@ -19,11 +17,9 @@ function save_options() {
 // Restores state using the preferences
 // stored in chrome.storage.
 function restore_options() {
-    chrome.storage.sync.get({
-        haurl: '(enter url here)',
+    chrome.storage.sync.get({        
         webhookid: 'some_webhook_id'
-    }, function (items) {
-        document.getElementById('haurl').value = items.haurl;
+    }, function (items) {    
         document.getElementById('webhookid').value = items.webhookid;
     });
 }
