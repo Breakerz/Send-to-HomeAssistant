@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><title>Send-to-HomeAssistant Options</title></head>
+<body>
+
+
+<label>
+    Home Assistant URL with the protocol prefix (http or https), and the ending slash : <br/>  (example for https://abcdefg.ui.nabu.casa/ or http://192.168.0.125:8123/") :
+    <br/>
+    <input type="text" id="haurl">
+</label>
+<br>
+<label>
+    Webhook Id <a href="https://www.home-assistant.io/docs/automation/trigger/">docs</a> :
+    <br/>
+    <input type="text" id="webhookid">
+</label>
+
+
+<div id="status"></div>
+<button id="save">Save</button>
+
+<script src="options.js"></script>
+</body>
+</html>
