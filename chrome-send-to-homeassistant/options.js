@@ -1,7 +1,7 @@
 // Saves options to chrome.storage
 function save_options() {
     var webhookid = document.getElementById('webhookid').value;
-    console.log(haurl + webhookid);
+    console.log(webhookid);
     chrome.storage.sync.set({        
         webhookid: webhookid
     }, function () {
